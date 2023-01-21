@@ -1,0 +1,1 @@
+ResearchSync syncs journey mode research progress across players on a server

@@ -1,0 +1,3 @@
+displayName = ResearchSync
+author = AUTplayed
+version = 0.1
