@@ -1,12 +1,15 @@
 # ResearchSync
 
-This mod synchronizes journey mode research progress across players on a server.
+This mod synchronizes journey mode research progress live across players on a server.
 
-Assuming player A sacrifices 5 Wood for research, player B will also receive these 5 Wood for their research progress.
+Assuming player A sacrifices 5 Wood for research, player B will also immediately receive these 5 Wood for their research progress.
 Concurrent researching is properly handled.
 
 On server join each client will sync their whole current state with all other clients, but only overriding the local research state if it's < than the one sent by another player.
 Essentially this means that once all players have joined and synced on the server, each player will have a merged state of the highest research progress of each item from all players.
+From that point on all sacrificed items are constantly synced across all players.
+
+**Warning**: This behavior means that if you join with a character that has unlocked every item on a server, all other players will immediately also permanently unlock everything. 
 
 ## How it works
 
